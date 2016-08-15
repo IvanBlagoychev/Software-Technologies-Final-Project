@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+body{
+    background-image:url("../content/images/Fall.jpg");
+}
+body>header {
+    background: transparent;
+    padding: 0px;
+    text-align: right;
+    font: 16px Indie Flower;
+
+}
+body>header>a>img, body>header a  {
+    padding: 10px 5px;
+    font-size: 1.5em ;
+    color: #eeeeee;
+ }
+
+body>footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    background-color: #efefef;
+    text-align: center;
+
+}
+
+table th, table td {
+    background: #DDD;
+    padding: 5px;
+}
+
+ul#messages li {
+    display: block;
+    width: 80%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+ul#messages li.info {
+    background: #7f7;
+}
+
+ul#messages li.error {
+    background: #d00;
+    color: white;
+}
+
+.validation-error {
+    vertical-align: top;
+    margin-left: 10px;
+    color: red;
+}
+
+#logged-in-info {
+    text-align: center;
+    margin-top: 18px;
+}
+
+#logged-in-info form {
+    text-align: right;
+    margin-right: 10px;
+}
+
+body>main:after {
+    content: '';
+    display: block;
+    clear: both;
+
+}
+
+.main_page{
+    font-size: 85px;
+    text-align: center;
+    padding: 200px 170px;
+    color: aqua;
+}
