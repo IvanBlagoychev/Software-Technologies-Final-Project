@@ -22,4 +22,3 @@
         </tr>
     <?php endforeach ?>
 </table>
-<a href="<?=APP_ROOT?>/posts/create">[Create New]</a>
