@@ -22,7 +22,7 @@ class PostsModel extends BaseModel
     public function create(string $title, string $content, int $user_id) : bool
     {
         $statement = self::$db->prepare(
-            "INSERT INTO posts(title, content, author_id) VALUES(?, ?, ?)");
+            "INSERT INTO posts(title, content, user_id) VALUES(?, ?, ?)");
         $statement->bind_param("ssi", $title, $content, $user_id);
         $statement ->execute();
         return $statement->affected_rows == 1;
@@ -30,8 +30,7 @@ class PostsModel extends BaseModel
 
     public function edit(string $id, string $title, string $content, string $date, int $user_id) : bool
     {
-        $statement= self::$db->prepare("UPDATE posts SET title= ?, " .
-            "content = ?, date = ?, user_id = ?, WHERE id = ?");
+        $statement = self::$db->prepare("UPDATE posts SET title = ?, " . "content = ?, date = ?, user_id = ? WHERE id = ?");
         $statement->bind_param("sssii", $title, $content, $date, $user_id, $id);
         $statement->execute();
         return $statement->affected_rows >= 0;
