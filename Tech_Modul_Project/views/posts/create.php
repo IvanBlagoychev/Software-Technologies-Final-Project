@@ -6,8 +6,7 @@
     <div>Title:</div>
     <input type="text" name="post_title" />
     <div>Content:</div>
-    <input class="create" type="text" rows="10" id="post_content">
-<!--    <div><input type="submit" value="Create" />-->
-    <button type="submit" value="Go, Baby, Go!">Go,Baby,Go!</button>
-<!--        <a href="--><?//=APP_ROOT?><!--/posts">[Cancel]</a></div>-->
+    <textarea rows="10" name="post_content"></textarea>
+    <div><input type="submit" value="Create" />
+        
 </form>

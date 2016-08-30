@@ -22,20 +22,39 @@ body>header>a>img, body>header a  {
  }
 
 body>footer {
-    position: absolute;
+    position: fixed;
+
     right: 0;
     bottom: 0;
     left: 0;
     padding: 5px;
     background-color: #efefef;
     text-align: center;
+}
 
+body>main>aside {
+    float: right;
+    width: 200px;
+    background: #CCC;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+body>aside h2 {
+    margin: 5px 0px 15px 0px;
+}
+
+body>aside a {
+    display: block;
+    margin: 5px 0px;
+    text-decoration: none;
 }
 
 table th, table td {
-    background: #DDD;
+    background: #90EE90;
     padding: 10px;
-    border-radius: 25px;
+    border-color: #00BFFF;
+    text-align: center;
 }
 
 ul#messages li {
@@ -84,4 +103,19 @@ body>main:after {
     text-align: center;
     padding: 200px 170px;
     color: aqua;
+}
+
+.posts_view{
+    width: 97%;
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: #77ff77;
+    background-color: ghostwhite;
+}
+
+.counter{
+    color: #717171;
+    font:20px Lato;
 }

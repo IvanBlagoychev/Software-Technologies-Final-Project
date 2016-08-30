@@ -6,6 +6,7 @@ abstract class BaseController
     protected $actionName;
     protected $isViewRendered = false;
     protected $isPost = false;
+    protected $isComment = false;
     protected $isLoggedIn = false;
     protected $title = "";
     protected $model;
@@ -18,6 +19,10 @@ abstract class BaseController
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $this->isPost = true;
+        }
+
+        if ($_SERVER['REQUEST_METHOD'] === 'COMMENT') {
+            $this->isComment = true;
         }
 
         $this->isLoggedIn = isset($_SESSION['username']);

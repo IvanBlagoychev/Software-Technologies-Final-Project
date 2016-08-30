@@ -17,8 +17,8 @@
             <td><?=cutLongText($post['content']) ?></td>
             <td><?=htmlspecialchars($post['date']) ?></td>
             <td><?=$post['user_id'] ?></td>
-            <td><a href="<?=APP_ROOT?>/posts/edit/<?=$post['id']?> ">[Edit]</a>
-                <a href="<?=APP_ROOT?>/posts/delete/<?=$post['id']?> ">[Delete]</a></td>
+            <td><div class="edit_and_delete"> <a href="<?=APP_ROOT?>/posts/edit/<?=$post['id']?> "><input type="button" value="Edit"></a>
+                <a href="<?=APP_ROOT?>/posts/delete/<?=$post['id']?> "><input type="button" value="Delete"></a></div></td>
         </tr>
     <?php endforeach ?>
 </table>
