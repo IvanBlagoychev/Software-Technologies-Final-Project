@@ -13,14 +13,19 @@
 
 <body>
 <header>
-    <?php if ($this->isLoggedIn) : ?>
+    <?php if ($this->isLoggedIn):
+        if($_SESSION['username'] == "admin"):?>
             <a href="<?=APP_ROOT?>/">Home</a>
             <a href="<?=APP_ROOT?>/posts">Posts</a>
             <a href="<?=APP_ROOT?>/posts/create">Create Post</a>
             <a href="<?=APP_ROOT?>/users">Users</a>
-            
             <a href="<?=APP_ROOT?>/comments">Comments</a>
             <a href="<?=APP_ROOT?>/users/logout">Logout</a>
+        <?php else:?>
+            <a href="<?=APP_ROOT?>/">Home</a>
+            <a href="<?=APP_ROOT?>/posts/create">Create Post</a>
+            <a href="<?=APP_ROOT?>/users/logout">Logout</a>
+        <?php endif;?>
     <?php else: ?>
         <a href="<?=APP_ROOT?>/users/login">Login</a>
         <a href="<?=APP_ROOT?>/users/register">Register</a>

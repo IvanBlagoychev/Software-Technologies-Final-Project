@@ -11,7 +11,7 @@ class CommentsController extends BaseController
     {
         $this->comment = $this->model->getAll();
     }
-    
+
     
     public function create_comment()
     {
@@ -24,7 +24,7 @@ class CommentsController extends BaseController
                 $userId = $_SESSION['user_id'];
                 if ($this->model->create($content, $userId)) {
                     $this->addInfoMessage("Comment added.");
-                    $this->redirect("posts");
+                    $this->redirect("home");
                 } else{
                     $this->addErrorMessage("Error: cannot add comment.");
                 }

@@ -10,5 +10,5 @@
     <input type="text" name="post_date" value="<?=htmlspecialchars($this->post['date'])?>" />
     <div>Author ID:</div>
     <input type="text" name="user_id" value="<?=htmlspecialchars($this->post['user_id'])?>" />
-    <div><input type="submit" value="Edit"><a href="<?=APP_ROOT?>/posts">[Cancel]</a></div>
+    <div><input type="submit" value="Edit"></div>
 </form>

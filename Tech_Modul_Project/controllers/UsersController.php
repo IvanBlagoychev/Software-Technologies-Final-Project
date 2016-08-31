@@ -62,6 +62,9 @@ class UsersController extends BaseController
     {
         session_destroy();
         $this->addInfoMessage("Logout successful");
-        $this->redirect("");
+        return $this->redirect("");
     }
+    
+    
 }
+

@@ -9,10 +9,11 @@ body{
 }
 body>header {
     border-radius: 35px;
-    background: #717171;
+    background: #FF7F50;
     padding: 10px;
     text-align: right;
     font: 16px Indie Flower;
+    color: #90EE90;
 
 }
 body>header>a>img, body>header a  {
@@ -23,7 +24,6 @@ body>header>a>img, body>header a  {
 
 body>footer {
     position: fixed;
-
     right: 0;
     bottom: 0;
     left: 0;
@@ -51,10 +51,14 @@ body>aside a {
 }
 
 table th, table td {
-    background: #90EE90;
+    background: lightblue;
     padding: 10px;
-    border-color: #00BFFF;
+    border:2px solid;
+    border-color: black;
     text-align: center;
+    alignment: center;
+
+    
 }
 
 ul#messages li {
@@ -111,11 +115,32 @@ body>main:after {
     padding: 20px;
     border: 2px solid;
     border-radius: 5px;
-    border-color: #77ff77;
-    background-color: ghostwhite;
+    border-color: #00FF00;
+    background-color: #FFFF99;
+
+}
+img{
+    float: right;
 }
 
-.counter{
-    color: #717171;
-    font:20px Lato;
+.button{
+    text-decoration: none;
+
+}
+
+.edit_and_delete{
+    width: 50%;
+}
+
+.kotima{
+    display: inline-block;
+    border: 2px solid;
+    border-color: lightblue;
+    font: 20px Lobster;
+    border-radius: 20px;
+    width: 100%;
+
+}
+.date{
+    font: 25px "Lato"
 }
